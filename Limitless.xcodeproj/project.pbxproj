@@ -1,0 +1,847 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0D08CB1795A1105D8BA2284 /* Pods_Limitless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D429816B90FBB9078F770D /* Pods_Limitless.framework */; };
+		B44BB1D6247AD1CF009CB270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB1D5247AD1CF009CB270 /* AppDelegate.swift */; };
+		B44BB1D8247AD1CF009CB270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB1D7247AD1CF009CB270 /* SceneDelegate.swift */; };
+		B44BB1DC247AD1D0009CB270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44BB1DB247AD1D0009CB270 /* Assets.xcassets */; };
+		B44BB1DF247AD1D0009CB270 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44BB1DE247AD1D0009CB270 /* Preview Assets.xcassets */; };
+		B44BB1E2247AD1D0009CB270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44BB1E0247AD1D0009CB270 /* LaunchScreen.storyboard */; };
+		B44BB1ED247AD1D0009CB270 /* LimitlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB1EC247AD1D0009CB270 /* LimitlessTests.swift */; };
+		B44BB1F8247AD1D0009CB270 /* LimitlessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB1F7247AD1D0009CB270 /* LimitlessUITests.swift */; };
+		B44BB210247AD274009CB270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B44BB20F247AD273009CB270 /* GoogleService-Info.plist */; };
+		B44BB215247AD3B0009CB270 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB212247AD3B0009CB270 /* LoginView.swift */; };
+		B44BB216247AD3B0009CB270 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB213247AD3B0009CB270 /* SignUp.swift */; };
+		B44BB217247AD3B0009CB270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB214247AD3B0009CB270 /* ContentView.swift */; };
+		B44BB21C247AD3B6009CB270 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB219247AD3B6009CB270 /* ImagePicker.swift */; };
+		B44BB21D247AD3B6009CB270 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB21A247AD3B6009CB270 /* PhotoCaptureView.swift */; };
+		B44BB21E247AD3B6009CB270 /* GridThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB21B247AD3B6009CB270 /* GridThumbnail.swift */; };
+		B44BB221247AD3BB009CB270 /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB220247AD3BB009CB270 /* ImageResize.swift */; };
+		B44BB22D247AD3CB009CB270 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB22A247AD3CB009CB270 /* LoginView.swift */; };
+		B44BB22E247AD3CB009CB270 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB22B247AD3CB009CB270 /* SignUp.swift */; };
+		B44BB22F247AD3CB009CB270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB22C247AD3CB009CB270 /* ContentView.swift */; };
+		B44BB232247AD3D6009CB270 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB231247AD3D6009CB270 /* User.swift */; };
+		B44BB235247AD3FA009CB270 /* FirebaseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BB234247AD3FA009CB270 /* FirebaseSession.swift */; };
+		CD52C44693988A1D11B0D69E /* Pods_LimitlessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78593081C1EB02C8B722F67 /* Pods_LimitlessTests.framework */; };
+		EB6C2DFA7F34F3F5207D1267 /* Pods_Limitless_LimitlessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97E1A77DCE1784AC217796F /* Pods_Limitless_LimitlessUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B44BB1E9247AD1D0009CB270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44BB1CA247AD1CF009CB270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44BB1D1247AD1CF009CB270;
+			remoteInfo = Limitless;
+		};
+		B44BB1F4247AD1D0009CB270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44BB1CA247AD1CF009CB270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44BB1D1247AD1CF009CB270;
+			remoteInfo = Limitless;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04D429816B90FBB9078F770D /* Pods_Limitless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Limitless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3076F97D3BBF41D23E6F6FC1 /* Pods-LimitlessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LimitlessTests.release.xcconfig"; path = "Target Support Files/Pods-LimitlessTests/Pods-LimitlessTests.release.xcconfig"; sourceTree = "<group>"; };
+		5541BF933EE287F4DBE807C4 /* Pods-Limitless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Limitless.debug.xcconfig"; path = "Target Support Files/Pods-Limitless/Pods-Limitless.debug.xcconfig"; sourceTree = "<group>"; };
+		6125345A0B617028B9D93CA1 /* Pods-Limitless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Limitless.release.xcconfig"; path = "Target Support Files/Pods-Limitless/Pods-Limitless.release.xcconfig"; sourceTree = "<group>"; };
+		8AE707C0BBA2CAA0C0116E59 /* Pods-Limitless-LimitlessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Limitless-LimitlessUITests.release.xcconfig"; path = "Target Support Files/Pods-Limitless-LimitlessUITests/Pods-Limitless-LimitlessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A78593081C1EB02C8B722F67 /* Pods_LimitlessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LimitlessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97E1A77DCE1784AC217796F /* Pods_Limitless_LimitlessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Limitless_LimitlessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44BB1D2247AD1CF009CB270 /* Limitless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Limitless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44BB1D5247AD1CF009CB270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B44BB1D7247AD1CF009CB270 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B44BB1DB247AD1D0009CB270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B44BB1DE247AD1D0009CB270 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B44BB1E1247AD1D0009CB270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B44BB1E3247AD1D0009CB270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44BB1E8247AD1D0009CB270 /* LimitlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LimitlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44BB1EC247AD1D0009CB270 /* LimitlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitlessTests.swift; sourceTree = "<group>"; };
+		B44BB1EE247AD1D0009CB270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44BB1F3247AD1D0009CB270 /* LimitlessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LimitlessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44BB1F7247AD1D0009CB270 /* LimitlessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitlessUITests.swift; sourceTree = "<group>"; };
+		B44BB1F9247AD1D0009CB270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44BB20F247AD273009CB270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B44BB212247AD3B0009CB270 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B44BB213247AD3B0009CB270 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		B44BB214247AD3B0009CB270 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B44BB219247AD3B6009CB270 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B44BB21A247AD3B6009CB270 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		B44BB21B247AD3B6009CB270 /* GridThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridThumbnail.swift; sourceTree = "<group>"; };
+		B44BB220247AD3BB009CB270 /* ImageResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
+		B44BB22A247AD3CB009CB270 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B44BB22B247AD3CB009CB270 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		B44BB22C247AD3CB009CB270 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B44BB231247AD3D6009CB270 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B44BB234247AD3FA009CB270 /* FirebaseSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseSession.swift; sourceTree = "<group>"; };
+		C3C8689636E8B8D8C2A76741 /* Pods-LimitlessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LimitlessTests.debug.xcconfig"; path = "Target Support Files/Pods-LimitlessTests/Pods-LimitlessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EEE56B83BC1A57EA4D0D50CC /* Pods-Limitless-LimitlessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Limitless-LimitlessUITests.debug.xcconfig"; path = "Target Support Files/Pods-Limitless-LimitlessUITests/Pods-Limitless-LimitlessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B44BB1CF247AD1CF009CB270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D08CB1795A1105D8BA2284 /* Pods_Limitless.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44BB1E5247AD1D0009CB270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD52C44693988A1D11B0D69E /* Pods_LimitlessTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44BB1F0247AD1D0009CB270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6C2DFA7F34F3F5207D1267 /* Pods_Limitless_LimitlessUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18FCB2C06797A45B3ECAD046 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5541BF933EE287F4DBE807C4 /* Pods-Limitless.debug.xcconfig */,
+				6125345A0B617028B9D93CA1 /* Pods-Limitless.release.xcconfig */,
+				EEE56B83BC1A57EA4D0D50CC /* Pods-Limitless-LimitlessUITests.debug.xcconfig */,
+				8AE707C0BBA2CAA0C0116E59 /* Pods-Limitless-LimitlessUITests.release.xcconfig */,
+				C3C8689636E8B8D8C2A76741 /* Pods-LimitlessTests.debug.xcconfig */,
+				3076F97D3BBF41D23E6F6FC1 /* Pods-LimitlessTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		42DBE4D86B0C58CD580E5B67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04D429816B90FBB9078F770D /* Pods_Limitless.framework */,
+				A97E1A77DCE1784AC217796F /* Pods_Limitless_LimitlessUITests.framework */,
+				A78593081C1EB02C8B722F67 /* Pods_LimitlessTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B44BB1C9247AD1CF009CB270 = {
+			isa = PBXGroup;
+			children = (
+				B44BB1D4247AD1CF009CB270 /* Limitless */,
+				B44BB1EB247AD1D0009CB270 /* LimitlessTests */,
+				B44BB1F6247AD1D0009CB270 /* LimitlessUITests */,
+				B44BB1D3247AD1CF009CB270 /* Products */,
+				18FCB2C06797A45B3ECAD046 /* Pods */,
+				42DBE4D86B0C58CD580E5B67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B44BB1D3247AD1CF009CB270 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB1D2247AD1CF009CB270 /* Limitless.app */,
+				B44BB1E8247AD1D0009CB270 /* LimitlessTests.xctest */,
+				B44BB1F3247AD1D0009CB270 /* LimitlessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B44BB1D4247AD1CF009CB270 /* Limitless */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB211247AD3B0009CB270 /* Views */,
+				B44BB1D5247AD1CF009CB270 /* AppDelegate.swift */,
+				B44BB1D7247AD1CF009CB270 /* SceneDelegate.swift */,
+				B44BB1DB247AD1D0009CB270 /* Assets.xcassets */,
+				B44BB1E0247AD1D0009CB270 /* LaunchScreen.storyboard */,
+				B44BB1E3247AD1D0009CB270 /* Info.plist */,
+				B44BB20F247AD273009CB270 /* GoogleService-Info.plist */,
+				B44BB1DD247AD1D0009CB270 /* Preview Content */,
+			);
+			path = Limitless;
+			sourceTree = "<group>";
+		};
+		B44BB1DD247AD1D0009CB270 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB1DE247AD1D0009CB270 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B44BB1EB247AD1D0009CB270 /* LimitlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB1EC247AD1D0009CB270 /* LimitlessTests.swift */,
+				B44BB1EE247AD1D0009CB270 /* Info.plist */,
+			);
+			path = LimitlessTests;
+			sourceTree = "<group>";
+		};
+		B44BB1F6247AD1D0009CB270 /* LimitlessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB1F7247AD1D0009CB270 /* LimitlessUITests.swift */,
+				B44BB1F9247AD1D0009CB270 /* Info.plist */,
+			);
+			path = LimitlessUITests;
+			sourceTree = "<group>";
+		};
+		B44BB211247AD3B0009CB270 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB233247AD3FA009CB270 /* Sessions */,
+				B44BB230247AD3D6009CB270 /* Models */,
+				B44BB229247AD3CB009CB270 /* Views */,
+				B44BB21F247AD3BB009CB270 /* Utilities */,
+				B44BB218247AD3B6009CB270 /* Components */,
+				B44BB212247AD3B0009CB270 /* LoginView.swift */,
+				B44BB213247AD3B0009CB270 /* SignUp.swift */,
+				B44BB214247AD3B0009CB270 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B44BB218247AD3B6009CB270 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB219247AD3B6009CB270 /* ImagePicker.swift */,
+				B44BB21A247AD3B6009CB270 /* PhotoCaptureView.swift */,
+				B44BB21B247AD3B6009CB270 /* GridThumbnail.swift */,
+			);
+			name = Components;
+			path = Limitless/Components;
+			sourceTree = SOURCE_ROOT;
+		};
+		B44BB21F247AD3BB009CB270 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB220247AD3BB009CB270 /* ImageResize.swift */,
+			);
+			name = Utilities;
+			path = Limitless/Utilities;
+			sourceTree = SOURCE_ROOT;
+		};
+		B44BB229247AD3CB009CB270 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB22A247AD3CB009CB270 /* LoginView.swift */,
+				B44BB22B247AD3CB009CB270 /* SignUp.swift */,
+				B44BB22C247AD3CB009CB270 /* ContentView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B44BB230247AD3D6009CB270 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB231247AD3D6009CB270 /* User.swift */,
+			);
+			name = Models;
+			path = Limitless/Models;
+			sourceTree = SOURCE_ROOT;
+		};
+		B44BB233247AD3FA009CB270 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				B44BB234247AD3FA009CB270 /* FirebaseSession.swift */,
+			);
+			name = Sessions;
+			path = Limitless/Sessions;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B44BB1D1247AD1CF009CB270 /* Limitless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44BB1FC247AD1D1009CB270 /* Build configuration list for PBXNativeTarget "Limitless" */;
+			buildPhases = (
+				24D4B6F174477C4468743F87 /* [CP] Check Pods Manifest.lock */,
+				B44BB1CE247AD1CF009CB270 /* Sources */,
+				B44BB1CF247AD1CF009CB270 /* Frameworks */,
+				B44BB1D0247AD1CF009CB270 /* Resources */,
+				35495285B36B2F36C2A7DE00 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Limitless;
+			productName = Limitless;
+			productReference = B44BB1D2247AD1CF009CB270 /* Limitless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B44BB1E7247AD1D0009CB270 /* LimitlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44BB1FF247AD1D1009CB270 /* Build configuration list for PBXNativeTarget "LimitlessTests" */;
+			buildPhases = (
+				33F225BD3EA05E1EBCA238E3 /* [CP] Check Pods Manifest.lock */,
+				B44BB1E4247AD1D0009CB270 /* Sources */,
+				B44BB1E5247AD1D0009CB270 /* Frameworks */,
+				B44BB1E6247AD1D0009CB270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44BB1EA247AD1D0009CB270 /* PBXTargetDependency */,
+			);
+			name = LimitlessTests;
+			productName = LimitlessTests;
+			productReference = B44BB1E8247AD1D0009CB270 /* LimitlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B44BB1F2247AD1D0009CB270 /* LimitlessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44BB202247AD1D1009CB270 /* Build configuration list for PBXNativeTarget "LimitlessUITests" */;
+			buildPhases = (
+				94F58B4D4059CF78636CFB54 /* [CP] Check Pods Manifest.lock */,
+				B44BB1EF247AD1D0009CB270 /* Sources */,
+				B44BB1F0247AD1D0009CB270 /* Frameworks */,
+				B44BB1F1247AD1D0009CB270 /* Resources */,
+				F81338062CE0959E76FE994B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44BB1F5247AD1D0009CB270 /* PBXTargetDependency */,
+			);
+			name = LimitlessUITests;
+			productName = LimitlessUITests;
+			productReference = B44BB1F3247AD1D0009CB270 /* LimitlessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B44BB1CA247AD1CF009CB270 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Zankner Rodriguez";
+				TargetAttributes = {
+					B44BB1D1247AD1CF009CB270 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					B44BB1E7247AD1D0009CB270 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = B44BB1D1247AD1CF009CB270;
+					};
+					B44BB1F2247AD1D0009CB270 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = B44BB1D1247AD1CF009CB270;
+					};
+				};
+			};
+			buildConfigurationList = B44BB1CD247AD1CF009CB270 /* Build configuration list for PBXProject "Limitless" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B44BB1C9247AD1CF009CB270;
+			productRefGroup = B44BB1D3247AD1CF009CB270 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B44BB1D1247AD1CF009CB270 /* Limitless */,
+				B44BB1E7247AD1D0009CB270 /* LimitlessTests */,
+				B44BB1F2247AD1D0009CB270 /* LimitlessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B44BB1D0247AD1CF009CB270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44BB1E2247AD1D0009CB270 /* LaunchScreen.storyboard in Resources */,
+				B44BB210247AD274009CB270 /* GoogleService-Info.plist in Resources */,
+				B44BB1DF247AD1D0009CB270 /* Preview Assets.xcassets in Resources */,
+				B44BB1DC247AD1D0009CB270 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44BB1E6247AD1D0009CB270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44BB1F1247AD1D0009CB270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24D4B6F174477C4468743F87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Limitless-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33F225BD3EA05E1EBCA238E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LimitlessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35495285B36B2F36C2A7DE00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Limitless/Pods-Limitless-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Limitless/Pods-Limitless-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Limitless/Pods-Limitless-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94F58B4D4059CF78636CFB54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Limitless-LimitlessUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81338062CE0959E76FE994B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Limitless-LimitlessUITests/Pods-Limitless-LimitlessUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Limitless-LimitlessUITests/Pods-Limitless-LimitlessUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Limitless-LimitlessUITests/Pods-Limitless-LimitlessUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B44BB1CE247AD1CF009CB270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44BB232247AD3D6009CB270 /* User.swift in Sources */,
+				B44BB21E247AD3B6009CB270 /* GridThumbnail.swift in Sources */,
+				B44BB215247AD3B0009CB270 /* LoginView.swift in Sources */,
+				B44BB22F247AD3CB009CB270 /* ContentView.swift in Sources */,
+				B44BB217247AD3B0009CB270 /* ContentView.swift in Sources */,
+				B44BB22E247AD3CB009CB270 /* SignUp.swift in Sources */,
+				B44BB221247AD3BB009CB270 /* ImageResize.swift in Sources */,
+				B44BB21D247AD3B6009CB270 /* PhotoCaptureView.swift in Sources */,
+				B44BB216247AD3B0009CB270 /* SignUp.swift in Sources */,
+				B44BB21C247AD3B6009CB270 /* ImagePicker.swift in Sources */,
+				B44BB1D6247AD1CF009CB270 /* AppDelegate.swift in Sources */,
+				B44BB235247AD3FA009CB270 /* FirebaseSession.swift in Sources */,
+				B44BB22D247AD3CB009CB270 /* LoginView.swift in Sources */,
+				B44BB1D8247AD1CF009CB270 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44BB1E4247AD1D0009CB270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44BB1ED247AD1D0009CB270 /* LimitlessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44BB1EF247AD1D0009CB270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44BB1F8247AD1D0009CB270 /* LimitlessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B44BB1EA247AD1D0009CB270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44BB1D1247AD1CF009CB270 /* Limitless */;
+			targetProxy = B44BB1E9247AD1D0009CB270 /* PBXContainerItemProxy */;
+		};
+		B44BB1F5247AD1D0009CB270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44BB1D1247AD1CF009CB270 /* Limitless */;
+			targetProxy = B44BB1F4247AD1D0009CB270 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B44BB1E0247AD1D0009CB270 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44BB1E1247AD1D0009CB270 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B44BB1FA247AD1D1009CB270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B44BB1FB247AD1D1009CB270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B44BB1FD247AD1D1009CB270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5541BF933EE287F4DBE807C4 /* Pods-Limitless.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Limitless/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Limitless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miltonhacks.swiftUiTodos.Limitless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B44BB1FE247AD1D1009CB270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6125345A0B617028B9D93CA1 /* Pods-Limitless.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Limitless/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Limitless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miltonhacks.swiftUiTodos.Limitless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B44BB200247AD1D1009CB270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3C8689636E8B8D8C2A76741 /* Pods-LimitlessTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LimitlessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miltonhacks.swiftUiTodos.LimitlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Limitless.app/Limitless";
+			};
+			name = Debug;
+		};
+		B44BB201247AD1D1009CB270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3076F97D3BBF41D23E6F6FC1 /* Pods-LimitlessTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LimitlessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miltonhacks.swiftUiTodos.LimitlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Limitless.app/Limitless";
+			};
+			name = Release;
+		};
+		B44BB203247AD1D1009CB270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE56B83BC1A57EA4D0D50CC /* Pods-Limitless-LimitlessUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LimitlessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miltonhacks.swiftUiTodos.LimitlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Limitless;
+			};
+			name = Debug;
+		};
+		B44BB204247AD1D1009CB270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AE707C0BBA2CAA0C0116E59 /* Pods-Limitless-LimitlessUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LimitlessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miltonhacks.swiftUiTodos.LimitlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Limitless;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B44BB1CD247AD1CF009CB270 /* Build configuration list for PBXProject "Limitless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44BB1FA247AD1D1009CB270 /* Debug */,
+				B44BB1FB247AD1D1009CB270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44BB1FC247AD1D1009CB270 /* Build configuration list for PBXNativeTarget "Limitless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44BB1FD247AD1D1009CB270 /* Debug */,
+				B44BB1FE247AD1D1009CB270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44BB1FF247AD1D1009CB270 /* Build configuration list for PBXNativeTarget "LimitlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44BB200247AD1D1009CB270 /* Debug */,
+				B44BB201247AD1D1009CB270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44BB202247AD1D1009CB270 /* Build configuration list for PBXNativeTarget "LimitlessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44BB203247AD1D1009CB270 /* Debug */,
+				B44BB204247AD1D1009CB270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B44BB1CA247AD1CF009CB270 /* Project object */;
+}
