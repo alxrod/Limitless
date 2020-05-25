@@ -9,24 +9,26 @@
 import SwiftUI
 
 struct GridThumbnail: View {
-    @State var selected: Bool = false
-    var image: UIImage
+    @Binding var thumb: Thumbnail
     var width: CGFloat
     var height: CGFloat
+    var actionResponse: () -> Void
     
     var body: some View {
         Button(action: {
             print("Calling button action")
-            self.selected = !self.selected
+            self.thumb.selected = !self.thumb.selected
+            self.actionResponse()
         }) {
-            if selected == true {
+            if self.thumb.selected == true {
                 Image(uiImage: image)
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: width, height: height, alignment: .center)
                     .clipped()
-                    .padding(0)
+                    .cornerRadius(12)
+                    .padding(4)
                     .overlay(SelectionOverlay(), alignment: .topTrailing)
             } else {
                 Image(uiImage: image)
@@ -35,7 +37,8 @@ struct GridThumbnail: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: width, height: height, alignment: .center)
                 .clipped()
-                .padding(0)
+                .cornerRadius(12)
+                .padding(4)
             }
             
         }
@@ -47,6 +50,7 @@ struct SelectionOverlay: View {
         ZStack {
             Image(systemName: "checkmark.circle.fill")
         }.background(Color.black)
+        .foregroundColor(Color(hex:"fd0054"))
         .opacity(0.8)
         .cornerRadius(10.0)
         .padding(6)

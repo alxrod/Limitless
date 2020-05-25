@@ -15,9 +15,9 @@ import FirebaseDatabase
 class FirebaseSession: ObservableObject {
     @Published var session: User?
     @Published var isLoggedIn: Bool?
-    @Published var imageThumbnails: [UIImage] = []
-    var imageIds: [String] = []
+    @Published var imageThumbnails: [String: UIImage] = [:]
     var storageRef = Storage.storage().reference()
+    var imageGraphicUpdate: (_ key: String, _ image:UIImage) -> Void = { (key, image) in print("You haven't implemented graphical handler yet") }
     var ref: DatabaseReference = Database.database().reference()
     
     func listen() {
@@ -40,17 +40,24 @@ class FirebaseSession: ObservableObject {
         
         _ = ref.child("users/"+uid+"/photos").observe(DataEventType.value, with: { (snapshot) in
             let imagesDict = snapshot.value as? [String : AnyObject] ?? [:]
+            var index=0;
             for (fbKey, imgKey) in imagesDict {
                 if let img = imgKey as? String {
-                    if self.imageIds.contains(img) == false {
-                        self.imageIds.append(img)
+                    if self.imageThumbnails.keys.contains(img) == false {
                         if let user = self.session {
-                            self.grabThumbnailById(uid: user.uid, iid: img)
+                            if (index == imagesDict.keys.count-1) {
+                                self.grabThumbnailById(uid: user.uid, iid: img, endBatch: true)
+                            } else {
+                                self.grabThumbnailById(uid: user.uid, iid: img)
+                            }
+                            
                         }
                     }
+                    
                 }
+                index+=1
             }
-            print(self.imageIds)
+            print(self.imageThumbnails.keys)
         })
     }
     
@@ -122,7 +129,7 @@ class FirebaseSession: ObservableObject {
     }
     
     
-    func grabThumbnailById(uid: String, iid: String) {
+    func grabThumbnailById(uid: String, iid: String, endBatch: Bool=false) {
         let imageRef = storageRef.child(uid+"/thumbnails/"+iid)
 
         imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
@@ -134,7 +141,38 @@ class FirebaseSession: ObservableObject {
                 // Data for "images/island.jpg" is returned
                 if let image = UIImage(data: data!) {
                     print("Image parced successfuly")
-                    self.imageThumbnails.append(image)
+                    self.imageThumbnails[iid]=image
+                    self.imageGraphicUpdate(iid,image)
+
+                }
+                
+            }
+        }
+    }
+    
+    func downloadFullImageSet(iids: [String], completion: @escaping (UIImage, Bool) -> Void) {
+        if let user = self.session {
+            for iid in iids {
+                let imageRef = storageRef.child(user.uid+"/originals/"+iid)
+                
+                imageRef.getData(maxSize: 1 * 2048 * 2048) { data, error in
+                    if let error = error {
+                        print("Get data error:")
+                        print(error)
+                        // Uh-oh, an error occurred!
+                    } else {
+                        // Data for "images/island.jpg" is returned
+                        if let image = UIImage(data: data!) {
+                            if iids.index(of: iid) == (iids.count-1) {
+                                completion(image, true)
+                            } else {
+                                completion(image, false)
+                            }
+//                            let imageSaver = ImageSaver()
+//                            imageSaver.writeToPhotoAlbum(image: image)
+                            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                        }
+                    }
                 }
             }
         }

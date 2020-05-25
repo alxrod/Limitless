@@ -11,23 +11,51 @@ import SwiftUI
 struct LoginView: View {
     @State var email: String = ""
     @State var password: String = ""
+    @State var showAlert: Bool = false
     
      @EnvironmentObject var session: FirebaseSession
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Sign In")
+       //Color(red: 0.83529411764, green: 0.8862745098, blue: 0.93333333333)
+        VStack  {
+            
+            Text("Limit<").font(.largeTitle).fontWeight(.bold).foregroundColor(Color(hex:"fd0054"))
+            Spacer()
+//            Spacer()
             TextField("Email", text: $email)
+                .multilineTextAlignment(.center).background(Color(hex:"0B070F")).foregroundColor(Color(hex:"#f5eded")).font(.title).frame(width: 350, height:60,alignment: .center).cornerRadius(10)
+
             
-            SecureField("Password",text:$password)
-            Button(action: logIn) {
-                Text("Sign In")
-            }.padding()
-            NavigationLink(destination: SignUp()) {
-                Text("Sign Up")
+                SecureField("Enter a password", text: $password)
+                    .multilineTextAlignment(.center).background(Color(hex:"0B070F")).foregroundColor(Color(hex:"#f5eded")).font(.title).frame(width: 300, height:60, alignment: .center).cornerRadius(10)
+            Spacer()
+//            Spacer()
+            Button(action: {
+                self.logIn()
+            }) {
+                Text("Sign In").foregroundColor(Color(hex:"fd0054"))
             }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Incorrect Username or Password"))
+            }
+            Spacer()
+//            Spacer()
+            Text ("Don't have an acount?").foregroundColor(Color(hex:"#f5eded"))
             
-        }.padding()
+            
+            VStack {
+                    NavigationLink(destination: SignUp())
+                    {
+                        Text("Sign Up").foregroundColor(Color(hex:"fd0054"))
+                                
+                                
+                }
+            }
+            Spacer()
+            
+           
+        }
+        
     }
     
     func logIn() {
@@ -35,6 +63,7 @@ struct LoginView: View {
             if error != nil {
                 print("Error")
                 print(error)
+                self.showAlert = true
             } else {
                 self.email = ""
                 self.password = ""
